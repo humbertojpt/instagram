@@ -26,10 +26,10 @@
 				<!-- Left Nav Section -->
 				<ul class="left">
 					<li>
-						<%= link_to 'Posts',posts_path %>
+						<%= link_to 'Posts', posts_path %>
 					</li>
 					<li>
-						<%= link_to 'Users',users_path %>
+						<%= link_to 'Users', users_path %>
 					</li>
 				</ul>
 			</section>
@@ -38,6 +38,14 @@
 
   	<div class="row">
   		<div class="large-12 columns">
+  			<br>
+  			<% flash.each do |type, message| %>
+				<div data-alert class="alert-box radius <%= flass_class type %> " >
+				<%= message %>
+				<a href="#" class="close">&times;</a>
+				</div>
+			<% end %>
+
     		<%= yield %>
   		</div>
   	</div>

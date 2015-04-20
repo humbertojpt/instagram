@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+	before_filter :get_users
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
@@ -15,7 +16,6 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
-    @users=User.all.map {|user|[user.name, user.id]}
   end
 
   # GET /posts/1/edit
@@ -71,5 +71,10 @@ class PostsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
       params.require(:post).permit(:content, :user_id)
+    end
+
+    private 
+    def get_users
+    	@users=User.all.map {|user|[user.name, user.id]}	
     end
 end
