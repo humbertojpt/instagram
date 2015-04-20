@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'better_errors'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.10'
 # Use sqlite3 as the database for Active Record
@@ -15,6 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer',  platforms: :ruby
+
+gem 'foundation-rails', '5.4.5'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
