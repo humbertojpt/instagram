@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  email: MyString
-  location: MyString
-  description: MyText
+  name: Humberto Peña
+  email: humbertojpt@gmail.com
+  location: barranquilla
+  description: hola mundo
 
 two:
-  name: MyString
-  email: MyString
-  location: MyString
-  description: MyText
+  name: Lionel Messi
+  email: lmessi@gmail.com
+  location: Barcelona
+  description: Futbol
